@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+body
+{
+   
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#0a0a0a,#3a4452 );
+}
+h1{   
+    color: rgb(237, 237, 237); 
+}
+.heading{
+    position: absolute;
+    top: 13%;
+    left: 37%;
+}
+
+
+.choice-button{
+    height: 120px;
+    width: 120px;
+    margin: 40px;
+    margin-top: 13%;
+    position: relative;
+    left: 28%;
+    border: 2px solid rgb(116, 114, 114);
+    top: 50%;
+    background: transparent;
+    box-shadow: -5px -6px 15px #000;
+    outline: 1px solid #313131;
+    outline-offset: 3px;
+    cursor: pointer;
+}
+    
+
+.choice-img{
+    height: 100px; 
+}
+
+.reset{
+    margin-left: -75px;
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:100ms ease all;
+    outline:none;
+  }
+  .reset:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .reset:before, .reset:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .reset:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .reset:hover:before, .reset:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  
+
+
+
+
+
+
+.reset{
+    position: absolute;
+    top: 90%;
+    left: 48%;
+}
+
+#score{
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    color: aliceblue;
+}
+#user{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    color: aliceblue;
+}
+#comp{
+    position: absolute;
+    left: 40%;
+    top: 65%;
+    color: aliceblue;
+}
+#result{
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    color: aliceblue;
+}
+
+.choice-button:active {
+    background: #000;
+    transform: translate(2px,2px);
+}
